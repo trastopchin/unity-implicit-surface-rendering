@@ -38,6 +38,7 @@ p -= _Position;
 float x = p.x;
 float y = p.z;
 float z = p.y;
+
 float a = _Param1;
 float b = _Param2;
 float c = _Param3;
@@ -58,7 +59,7 @@ float term = (x2 + y2 + z2);
 
 return x4 + y4 + z4 + a*term*term +b*term + c;
 ```
-This is an implicit surface function for a Goursat surface. Now you need to
+This is an implicit surface function for a [Goursat surface](https://mathcurve.com/surfaces.gb/goursat/goursat.shtml).
 
 1.	Make sure “Apply Shader to Selected Material?” and “Delete previous shader?” are true
 2.	Click generate shader.
