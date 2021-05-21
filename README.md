@@ -6,7 +6,7 @@ A set of shader blueprints and tools that allow users to create and render impli
   <img src="/Images/two_implicit_surfaces.png" alt="Two implicit surfaces rendered within Unity. The one on the left is a blue Goursat surface and the one on the right is a red Kummer surface." width="800">
 </p>
 
-This project builds on Ben Golus' [Rendering a Sphere on a Quad article](https://bgolus.medium.com/rendering-a-sphere-on-a-quad-13c92025570c), Jasper Flick's [Catlike Coding Unity Rendering Tutorials]((https://catlikecoding.com/unity/tutorials/rendering/)), and Tal Rastopchin's [AIT-GC-3D-Ray-Marching project](https://github.com/trastopchin/AIT-CG-3D-Ray-Marching).
+This project builds on Ben Golus' [Rendering a Sphere on a Quad article](https://bgolus.medium.com/rendering-a-sphere-on-a-quad-13c92025570c), Jasper Flick's [Catlike Coding Unity Rendering Tutorials](https://catlikecoding.com/unity/tutorials/rendering/), and Tal Rastopchin's [AIT-GC-3D-Ray-Marching project](https://github.com/trastopchin/AIT-CG-3D-Ray-Marching).
 
 ## Features
 
