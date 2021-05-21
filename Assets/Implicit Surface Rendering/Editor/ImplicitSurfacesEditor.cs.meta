@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: fdfa0978111b50e4ba7118905c469141
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - ISShaderBlueprint: {fileID: 4800000, guid: 694c17d99252e4c4ebfcaff8f9c68dd1, type: 3}
+  - ISLightingBlueprint: {fileID: 10900000, guid: 21a2d427e805b3a4798e6cfbfdd9bbba,
+      type: 3}
+  - ISShadowsBlueprint: {fileID: 10900000, guid: d1b2417cc21170b4fb1b01733894578f,
+      type: 3}
+  - ISRenderingBlueprint: {fileID: 10900000, guid: 50a81cea731c6e24a96e2c20efed26e3,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
