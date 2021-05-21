@@ -84,7 +84,7 @@ You can also specify the resolution of the ray marching algorithm by adjusting
 ### Performance
 - An easy way to improe the performance of the shader is to decrease the maximum amount of linear steps using distance away from the camera as a metric. This could work similarly to shadow cascades, rendering with better resolutions when we are closer to implicit surfaces and lower resolutions when we are sufficiently far away.
 - A very good way to improve the performance of this shader would be to implement it using the defered shading rendering path. This can especially speed up the forward add passes by not having to re-run the entire ray marching algorithm for each additional light.
-- Another way we could speed up the peformance of the ray marching algorithm is by
+- Another way we could speed up the peformance of the ray marching algorithm is by creating custom signed-distance-field based rendering algorithms using techniques outlined in John C. Hart's paper [Sphere Tracing: A Geometric Method for the Antialiased Ray Tracing of Implicit Surface](http://graphics.stanford.edu/courses/cs348b-20-spring-content/uploads/hart.pdf).
 
 ### Features
 - We could implement Ben Golus' ideas of rendering the implicit surface on a quad and being smart about how we perform our ray marching in order to allow lights to get arbitarily close to our surfaces (as opposed to outside their bounding cubes).
