@@ -197,7 +197,7 @@ float boxIntersect(float3 e, float3 d, float3 boxSize)
 * respectively. Otherwise returns (-1.0, -1.0);
 *
 * https://iquilezles.org/www/articles/intersectors/intersectors.htm
-* See LICENSE.md
+* See LICENSE.md.
 */
 float2 sphereIntersect(float3 ro, float3 rd, float4 sph)
 {

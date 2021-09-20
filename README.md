@@ -100,8 +100,9 @@ You can also specify the resolution of the ray marching algorithm by adjusting
 
 * [Rendering a Sphere on a Quad](https://bgolus.medium.com/rendering-a-sphere-on-a-quad-13c92025570c) - Ben Golus' article on raytracing a single sphere on a quad.
 * [Unity Rendering Tutorials](https://catlikecoding.com/unity/tutorials/rendering/) - Jasper Flick's rendering tutorials and code (MIT0 license).
+* [Ray-surface intersection functions](https://iquilezles.org/www/articles/intersectors/intersectors.htm) - Inigo Quilez' ray-surface intersection functions.
 * [AIT-GC-3D-Ray-Marching](https://github.com/trastopchin/AIT-CG-3D-Ray-Marching) - Tal Rastopchin's Fall 2019 AIT computer graphics course ray marching project.
 
 ## License
 
-The contents of this repository use a MIT No Attribution (MIT-0) license.
+The contents of this repository use a MIT No Attribution (MIT-0) license. See `LICENSE.md`.
