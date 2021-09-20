@@ -1,9 +1,6 @@
-#if !defined(IS_SHADOWS)
-#define IS_SHADOWS
-
-// Implict surface rendering shadow programs.
-
 /*
+Implict surface rendering shadow programs.
+
 A lot of this code is taken / adapted from:
 
 1) Jasper Flick's Catlike Coding rendering tutorials
@@ -12,6 +9,9 @@ https://catlikecoding.com/unity/tutorials/rendering/
 2) Ben Golus's Rendering a Sphere on a Quad Article
 https://bgolus.medium.com/rendering-a-sphere-on-a-quad-13c92025570c#aa33
 */
+
+#if !defined(IS_SHADOWS)
+#define IS_SHADOWS
 
 #include "UnityCG.cginc"
 #include "AutoLight.cginc"

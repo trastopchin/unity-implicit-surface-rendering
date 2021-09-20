@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// A simple camera controller script.
+/// </summary>
 public class CameraController : MonoBehaviour
 {
     // Camera orbit parameters]
@@ -11,13 +14,22 @@ public class CameraController : MonoBehaviour
     private Vector3 lastLocalEulerAngles = Vector3.zero;
 
     // Camera move parameters
-    private bool moving = true;
     public float moveSpeed = 1;
     private Vector3 moveDir = Vector3.zero;
 
     // Update is called once per frame
     void Update()
     {
+        rotate();
+        move();
+    }
+
+    /// <summary>
+    /// Manage orbit style rotation using click-and-drag.
+    /// </summary>
+    private void rotate()
+    {
+        // Determine whether or not the camera is rotating
         if (!rotating)
         {
             if (Input.GetMouseButtonDown(0))
@@ -28,6 +40,7 @@ public class CameraController : MonoBehaviour
             }
         }
 
+        // If the camera is rotating
         if (rotating)
         {
             if (Input.GetMouseButtonUp(0))
@@ -41,33 +54,36 @@ public class CameraController : MonoBehaviour
                 transform.eulerAngles = lastLocalEulerAngles + orbitSpeed * eulerAnglesOffset;
             }
         }
+    }
 
-        if (moving)
+    /// <summary>
+    /// Manage movement using the W, S, A, and D keys.
+    /// </summary>
+    private void move()
+    {
+        if (Input.GetKey(KeyCode.W))
         {
-            if (Input.GetKey(KeyCode.W))
-            {
-                moveDir = transform.forward;
-            }
-            else if (Input.GetKey(KeyCode.S))
-            {
-                moveDir = -transform.forward;
-            }
-            else if (Input.GetKey(KeyCode.D))
-            {
-                moveDir = transform.right;
-            }
-            else if (Input.GetKey(KeyCode.A))
-            {
-                moveDir = -transform.right;
-            }
-            else
-            {
-                moveDir = Vector3.zero;
-            }
-
-            moveDir = Vector3.ProjectOnPlane(moveDir, Vector3.up);
-
-            transform.position += moveSpeed * Time.deltaTime * moveDir;
+            moveDir = transform.forward;
         }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            moveDir = -transform.forward;
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            moveDir = transform.right;
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            moveDir = -transform.right;
+        }
+        else
+        {
+            moveDir = Vector3.zero;
+        }
+
+        moveDir = Vector3.ProjectOnPlane(moveDir, Vector3.up);
+
+        transform.position += moveSpeed * Time.deltaTime * moveDir;
     }
 }

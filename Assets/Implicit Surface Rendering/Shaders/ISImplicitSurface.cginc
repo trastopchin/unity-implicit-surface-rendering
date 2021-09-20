@@ -1,7 +1,7 @@
+// Implicit surface function definition
+
 #if !defined(IS_IMPLICIT_SURFACE)
 #define IS_IMPLICIT_SURFACE
-
-// Implicit surface function definition
 
 float implicitSurface(float3 p)
 {

@@ -1,3 +1,7 @@
+/*
+A simple surface shader that uses the input texture to interpolate between two
+colors.
+*/
 Shader "Custom/Checker"
 {
     Properties
