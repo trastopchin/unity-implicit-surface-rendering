@@ -1,4 +1,4 @@
-// Implicit surface function definition
+// Implicit surface function definition.
 
 #if !defined(IS_IMPLICIT_SURFACE)
 #define IS_IMPLICIT_SURFACE
